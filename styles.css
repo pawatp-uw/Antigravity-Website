@@ -1,0 +1,235 @@
+/* Global Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #ffffff;
+  color: #2b2b2b;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Top Black Navigation Bar */
+.navbar {
+  background-color: #262626;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-link {
+  color: #f3f4f6;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: opacity 0.15s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Main Page Container */
+.page-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 18px 24px 20px;
+}
+
+/* Blog Header (Centered) */
+.blog-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.blog-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.35rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+
+.blog-subtitle {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: #4b5563;
+  font-weight: 400;
+}
+
+/* Journal Articles Stream */
+.journal-stream {
+  display: flex;
+  flex-direction: column;
+}
+
+.journal-entry {
+  padding-bottom: 11px;
+  margin-bottom: 11px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.journal-entry:last-child {
+  border-bottom: none;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+
+/* Title Above Image & Description */
+.journal-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.18rem;
+  font-weight: 500;
+  color: #6b8f79; /* Sage green matching reference screenshot */
+  line-height: 1.25;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.journal-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.journal-title-link:hover {
+  text-decoration: underline;
+}
+
+/* Content Row: Left Image, Right Description */
+.journal-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+/* Thumbnail on Left */
+.journal-thumbnail {
+  flex-shrink: 0;
+  width: 96px;
+  height: 64px;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+
+.journal-thumbnail img,
+.journal-thumbnail svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Right Description Block */
+.journal-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.journal-desc {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.82rem;
+  line-height: 1.38;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+/* Right-aligned 'Read more →' link */
+.journal-readmore {
+  align-self: flex-end;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.78rem;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.journal-readmore:hover {
+  color: #111827;
+  text-decoration: underline;
+}
+
+/* Bottom Centered Home Link */
+.page-footer {
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.footer-home-link {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.footer-home-link:hover {
+  color: #4b5563;
+}
+
+/* Responsive Scaling for smaller laptop / tablet viewports */
+@media (max-height: 800px) {
+  .page-container {
+    padding: 12px 20px 14px;
+  }
+  .blog-header {
+    margin-bottom: 14px;
+  }
+  .blog-title {
+    font-size: 2.1rem;
+  }
+  .journal-entry {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  .journal-thumbnail {
+    width: 88px;
+    height: 58px;
+  }
+  .journal-title {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+  }
+  .journal-desc {
+    font-size: 0.79rem;
+    line-height: 1.34;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 14px;
+  }
+  .nav-link {
+    font-size: 9.5px;
+  }
+  .journal-thumbnail {
+    width: 78px;
+    height: 54px;
+  }
+}

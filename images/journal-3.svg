@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="160" height="100">
+  <!-- Sky -->
+  <rect width="160" height="65" fill="#7dd3fc"/>
+  
+  <!-- Mountain Silhouette -->
+  <polygon points="30,65 80,24 130,65" fill="#5b8296"/>
+  <!-- Mountain Snow Cap -->
+  <polygon points="68,34 80,24 92,34 86,37 80,34 74,38" fill="#ffffff"/>
+
+  <!-- Back rolling green hills -->
+  <ellipse cx="40" cy="74" rx="65" ry="18" fill="#65a30d"/>
+  <ellipse cx="120" cy="72" rx="70" ry="18" fill="#84cc16"/>
+
+  <!-- Foreground green field -->
+  <ellipse cx="80" cy="88" rx="100" ry="24" fill="#a3e635"/>
+  <rect y="82" width="160" height="18" fill="#84cc16"/>
+</svg>

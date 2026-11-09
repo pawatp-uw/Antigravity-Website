@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="160" height="100">
+  <!-- Soft pale sage / mist background -->
+  <rect width="160" height="100" fill="#ecfdf5"/>
+
+  <!-- Distant lighter trees -->
+  <g fill="#a7f3d0" stroke="#6ee7b7" stroke-width="0.5">
+    <rect x="18" y="0" width="6" height="100"/>
+    <rect x="42" y="0" width="5" height="100"/>
+    <rect x="70" y="0" width="7" height="100"/>
+    <rect x="105" y="0" width="6" height="100"/>
+    <rect x="135" y="0" width="5" height="100"/>
+  </g>
+
+  <!-- Midground green bamboo / pine trunks -->
+  <g fill="#059669">
+    <rect x="10" y="0" width="8" height="100"/>
+    <rect x="30" y="0" width="9" height="100"/>
+    <rect x="58" y="0" width="8" height="100"/>
+    <rect x="85" y="0" width="10" height="100"/>
+    <rect x="118" y="0" width="8" height="100"/>
+    <rect x="142" y="0" width="9" height="100"/>
+  </g>
+
+  <!-- Foreground deep emerald tree trunks -->
+  <g fill="#064e3b">
+    <rect x="2" y="0" width="7" height="100"/>
+    <rect x="22" y="0" width="7" height="100"/>
+    <rect x="48" y="0" width="8" height="100"/>
+    <rect x="74" y="0" width="9" height="100"/>
+    <rect x="98" y="0" width="8" height="100"/>
+    <rect x="128" y="0" width="8" height="100"/>
+    <rect x="153" y="0" width="7" height="100"/>
+  </g>
+
+  <!-- Stylized leaf branches across top -->
+  <g fill="#047857" opacity="0.85">
+    <polygon points="26,10 40,4 30,16"/>
+    <polygon points="52,18 68,12 56,24"/>
+    <polygon points="78,8 94,2 84,14"/>
+    <polygon points="102,16 118,10 108,22"/>
+    <polygon points="132,12 148,6 138,18"/>
+  </g>
+</svg>

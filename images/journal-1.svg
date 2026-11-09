@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="160" height="100">
+  <!-- Deep ocean background -->
+  <rect width="160" height="100" fill="#0f4559"/>
+  <!-- Light ambient water gradient -->
+  <circle cx="80" cy="50" r="45" fill="#1b6079" opacity="0.6"/>
+  <!-- Jellyfish bell / dome -->
+  <path d="M 52 46 C 52 26 108 26 108 46 C 108 52 98 55 92 52 C 86 49 82 53 80 53 C 78 53 74 49 68 52 C 62 55 52 52 52 46 Z" fill="#f8b668" opacity="0.9"/>
+  <!-- Inner dome glow -->
+  <path d="M 58 44 C 58 31 102 31 102 44 Z" fill="#fed7aa" opacity="0.5"/>
+  <!-- Tentacles -->
+  <g stroke="#fed7aa" stroke-width="1" fill="none" opacity="0.75">
+    <path d="M 64 52 Q 62 68 64 85"/>
+    <path d="M 70 52 Q 74 66 69 88"/>
+    <path d="M 76 53 Q 73 68 77 90"/>
+    <path d="M 80 53 Q 83 70 80 92"/>
+    <path d="M 84 53 Q 87 69 83 90"/>
+    <path d="M 90 52 Q 86 67 91 88"/>
+    <path d="M 96 52 Q 98 68 96 85"/>
+  </g>
+</svg>
